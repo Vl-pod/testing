@@ -42,7 +42,7 @@ describe('Credit Card Validator form', () => {
   test(
     'Form input should add .valid class if number card is valid',
     async () => {
-      await page.goto('http://localhost:9000');
+      await page.goto(baseUrl);
       await page.waitForSelector('.container-card');
 
       const form = await page.$('.container-card');
@@ -60,7 +60,7 @@ describe('Credit Card Validator form', () => {
   test(
     'Form input should add .invalid class if number card is invalid',
     async () => {
-      await page.goto('http://localhost:9000');
+      await page.goto(baseUrl);
       await page.waitForSelector('.container-card');
 
       const form = await page.$('.container-card');
