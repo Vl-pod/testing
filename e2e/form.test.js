@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import puppeteer from 'puppeteer';
 import { fork } from 'child_process';
 
@@ -22,8 +21,6 @@ describe('Credit Card Validator form', () => {
 
     browser = await puppeteer.launch({
       headless: 'new',
-      // slowMo: 50,
-      // devtools: true, // show devTools
     });
     page = await browser.newPage();
   });

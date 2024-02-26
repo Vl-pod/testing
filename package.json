@@ -43,7 +43,7 @@
     "webpack-dev-server": "^4.10.0",
     "webpack-merge": "^5.8.0"
   },
-  "dependencies": {
+  	"dependencies": {
     "core-js": "3"
   }
 }
